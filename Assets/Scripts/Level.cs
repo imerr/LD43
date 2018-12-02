@@ -10,7 +10,7 @@ public class Level : MonoBehaviour {
     private const float LevelEndTime = 2;
    
     public static Level Instance;
-    public static List<VictimType> KilledVictims = new List<VictimType>{VictimType.Human, VictimType.Human, VictimType.Human};
+    public static List<VictimType> KilledVictims = new List<VictimType>();
     public static int VictimsLeft;
     public static float TimeLeft;
     public static string NextScene;
