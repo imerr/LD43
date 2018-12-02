@@ -11,7 +11,7 @@ public class SpawnPoint : MonoBehaviour {
     }
     protected IEnumerator SpawnCoroutine(Action callback) {
         Particles.Play();
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(1);
         callback();
     }
 }

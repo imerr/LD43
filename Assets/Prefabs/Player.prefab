@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4935935402820790}
   - component: {fileID: 198338683614465076}
   - component: {fileID: 199302002987972248}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ParticlesLocal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4631949008508990}
   - component: {fileID: 198198115366200268}
   - component: {fileID: 199833082223101676}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: ParticlesWorld
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58,7 +58,7 @@ GameObject:
   - component: {fileID: 70438197367486748}
   - component: {fileID: 212896940821001110}
   - component: {fileID: 210739229898434772}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}

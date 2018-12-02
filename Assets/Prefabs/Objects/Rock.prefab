@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4130783228028222}
   - component: {fileID: 60261411159097336}
   - component: {fileID: 212299156830087272}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Rock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34,8 +34,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1073215519843066}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.77554345, y: -1.3572061, z: -0.1265951}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -10.5, y: 4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -49,7 +49,7 @@ PolygonCollider2D:
   m_GameObject: {fileID: 1073215519843066}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 52564a4c0beab144cbfb5b4df8ea8fe5, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -65,13 +65,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -0.40000004, y: 0.26666668}
-      - {x: -0.5, y: 0.10000001}
-      - {x: -0.5, y: -0.40000004}
-      - {x: -0.40000004, y: -0.4666667}
-      - {x: 0.5, y: -0.4666667}
-      - {x: 0.5, y: 0.10000001}
-      - {x: 0.36666667, y: 0.26666668}
+    - - {x: -0.5, y: 0.5}
+      - {x: -0.5, y: -0.5}
+      - {x: 0.5, y: -0.5}
+      - {x: 0.5, y: 0.5}
 --- !u!212 &212299156830087272
 SpriteRenderer:
   m_ObjectHideFlags: 1
