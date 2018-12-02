@@ -139,7 +139,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.3}
-  m_Size: {x: 0.6, y: 0.5}
+  m_Size: {x: 0.4, y: 0.5}
   m_Direction: 0
 --- !u!114 &114911137056719718
 MonoBehaviour:
@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e22d9aa3674388bb87d94d68f0f1eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BaseSpeed: {x: 5, y: 2.5}
+  BaseSpeed: {x: 6, y: 4}
 --- !u!198 &198198115366200268
 ParticleSystem:
   m_ObjectHideFlags: 1

@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4932345488579420}
   - component: {fileID: 212407267192194708}
   m_Layer: 0
-  m_Name: GoalSign
+  m_Name: GoalSignR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

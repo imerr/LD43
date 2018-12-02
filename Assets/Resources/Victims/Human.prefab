@@ -91,11 +91,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FearDistance: 4
-  FleeSpeed: 4
+  FleeSpeed: 8
   WalkSpeed: 1
-  WalkTime: 2
+  WalkTime: 1
+  Score: 10
   Type: 0
-  WalkChance: 0.01
+  WalkChance: 0.0025
 --- !u!114 &114665294702071982
 MonoBehaviour:
   m_ObjectHideFlags: 1

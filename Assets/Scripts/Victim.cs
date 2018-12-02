@@ -8,7 +8,7 @@ public enum VictimType {
 
 public class Victim : MonoBehaviour {
     public float FearDistance = 8;
-    public float FleeSpeed = 3;
+    public float FleeSpeed = 5;
     public float WalkSpeed = 1;
     public float WalkTime = 3;
     public int Score = 10;
@@ -77,11 +77,11 @@ public class Victim : MonoBehaviour {
                 if (dif.magnitude < FearDistance) {
                     _fleeing = true;
                     _walkTime = 0;
+                    var speed = Mathf.Max(FleeSpeed / 4, FleeSpeed * (1 - dif.magnitude / FearDistance));
                     var fleeDegree = MathHelper.Vector2ToDegrees(dif) + _fleeBias;
                     var fleeDir = MathHelper.DegreeToVector2(fleeDegree);
                     var hit = Physics2D.Raycast(transform.position, fleeDir,
-                        FleeSpeed * Time.fixedDeltaTime * 10 +
-                        Mathf.Max(_collider.bounds.extents.x, _collider.bounds.extents.y), LayerHelper.MoveMask);
+                        speed * 0.2f + Mathf.Max(_collider.bounds.extents.x, _collider.bounds.extents.y), LayerHelper.MoveMask);
                     if (hit.collider != null) {
                         float hitAngle = MathHelper.Vector2ToDegrees(hit.normal);
                         float leftDifference = MathHelper.AngleDifference(fleeDegree, hitAngle - 90);
@@ -95,7 +95,7 @@ public class Victim : MonoBehaviour {
                     }
     
                     _animator.State = EntityState.Running;
-                    _body.velocity = fleeDir * FleeSpeed;
+                    _body.velocity = fleeDir * speed;
                 } else {
                     _fleeing = false;
                     _walkTime -= Time.deltaTime;

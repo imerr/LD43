@@ -59,7 +59,7 @@ public class Level : MonoBehaviour {
 
     private void Start() {
         Tilemap.CompressBounds();
-        TutorialObject.SetActive(true);
+        TutorialObject.SetActive(FirstLevel);
     }
 
     private void OnDestroy() {

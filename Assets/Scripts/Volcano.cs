@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Volcano : MonoBehaviour {
 	public Text ScoreText;
-	public float WaitBetween = 1;
+	public float WaitBetween = 0.6f;
 	public Transform SpawnPoint;
 	public Transform JumpPoint;
 	public ParticleSystem Particles;

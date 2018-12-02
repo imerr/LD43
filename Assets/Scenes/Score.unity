@@ -461,7 +461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreText: {fileID: 583667878}
-  WaitBetween: 1
+  WaitBetween: 0.6
   SpawnPoint: {fileID: 137757638}
   JumpPoint: {fileID: 212126132}
   Particles: {fileID: 682392692}
