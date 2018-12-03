@@ -36,6 +36,7 @@ public class Level : MonoBehaviour {
     public float LevelTime;
     public bool FirstLevel;
     public string NextLevel;
+    public AudioSource VictimGetSound;
     
     
     
@@ -104,6 +105,7 @@ public class Level : MonoBehaviour {
     }
 
     public void ReachedGoal(Victim victim) {
+        VictimGetSound.Play();
         _victims.Remove(victim);
         KilledVictims.Add(victim.Type);
     }

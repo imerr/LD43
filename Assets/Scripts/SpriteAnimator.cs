@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using UnityEngine;
 
 public enum EntityState {
@@ -14,6 +15,7 @@ public class SpriteAnimator : MonoBehaviour {
 		public EntityState State;
 		public float FlipTime;
 		public Sprite[] Sprites;
+		public AudioSource[] Sounds;
 		public bool Loop;
 		public EntityState Return = EntityState.Idle;
 	}
@@ -105,6 +107,9 @@ public class SpriteAnimator : MonoBehaviour {
 			}
 		}
 
+		if (_currentState.Sounds != null && _currentState.Sounds.Length > _currentSprite) {
+			_currentState.Sounds[_currentSprite]?.Play();
+		}
 		_sprite.sprite = _currentState.Sprites[_currentSprite];
 	}
 }

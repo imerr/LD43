@@ -1,8 +1,9 @@
 using UnityEngine;
 
 public class Player : MonoBehaviour {
-    private Rigidbody2D _body;
     public Vector2 BaseSpeed = new Vector2(5f, 2.5f);
+    public AudioSource Sound;
+    private Rigidbody2D _body;
     private SpriteRenderer _sprite;
 
     private void Awake() {
@@ -31,6 +32,7 @@ public class Player : MonoBehaviour {
             _sprite.flipX = true;
         }
 
+        Sound.volume = Mathf.Lerp(Sound.volume, Mathf.Min(1, 0.3f + (_body.velocity.magnitude / BaseSpeed.magnitude) / 2), Time.deltaTime * 4);
         if (speed.sqrMagnitude > 0) {
             _body.velocity = Vector2.Scale(Vector2.ClampMagnitude(speed, 1), BaseSpeed);
         } else {
