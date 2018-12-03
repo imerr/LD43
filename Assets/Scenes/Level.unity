@@ -9096,7 +9096,7 @@ MonoBehaviour:
   FinishVictims: {fileID: 2125830293}
   FinishTime: {fileID: 833561534}
   TutorialObject: {fileID: 723408191}
-  LevelTime: 120
+  LevelTime: 180
   FirstLevel: 1
   NextLevel: Scenes/Level2
   VictimGetSound: {fileID: 2146618505}
