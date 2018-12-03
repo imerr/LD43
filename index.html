@@ -12,12 +12,12 @@
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json", {onProgress: UnityProgress});
     </script>
   </head>
-  <body>
+  <body style="background:#231f20;">
     <div class="webgl-content">
       <div id="gameContainer" style="width: 1280px; height: 720px; max-width: 100vw; max-height: 100vh;"></div>
       <div class="footer">
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">What could go wrong? | LD43 by imer</div>
+        <div class="title"><a style="color:white;" href="https://ldjam.com/events/ludum-dare/43/what-could-go-wrong">What could go wrong? | LD43 by imer</a></div>
       </div>
     </div>
   </body>
